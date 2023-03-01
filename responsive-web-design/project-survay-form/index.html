@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Physical fitness & condition questionnaire</h1>
+    <p id="description">
+      Hello, Please take a few minutes of your time to fill in the following
+      survey.
+    </p>
+    <form id="survey-form">
+      <!-- PERSONAL INFORMATION-->
+      <fieldset>
+        <label id="name-label" for="name"
+          >Your name:
+          <input id="name" type="text" placeholder="Nikola Nikolić" required />
+        </label>
+        <label id="email-label" for="email"
+          >Your email:
+          <input id="email" type="email" placeholder="nn@domein.org" required />
+        </label>
+        <label id="number-label" for="email"
+          >Your age:
+          <input id="number" type="number" min="7" max="111" placeholder="33" />
+        </label>
+      </fieldset>
+      <!-- DROPDOWN-->
+      <fieldset>
+        <label for="dropdown">
+          How often do you play sports?
+          <select id="dropdown">
+            <option value="1">Every day</option>
+            <option value="2">Once per week</option>
+            <option value="3">Every other day</option>
+            <option value="4">Several times per month</option>
+            <option value="5">Less often</option>
+          </select>
+        </label>
+      </fieldset>
+      <!-- RADIO-->
+      <fieldset id="reguglarity">
+        <label for="reguglarity">
+          How do you do most of your regular exercise?
+        </label>
+        <label for="alone">
+          <input
+            id="alone"
+            type="radio"
+            name="radio"
+            class="inline"
+            value="1"
+          />
+          Alone
+        </label>
+        <label for="pair">
+          <input id="pair" type="radio" name="radio" class="inline" value="2" />
+          In a pair
+        </label>
+        <label for="group">
+          <input
+            id="group"
+            type="radio"
+            name="radio"
+            class="inline"
+            value="2"
+          />
+          As a group
+        </label>
+      </fieldset>
+      <!-- CHECKBOX-->
+      <fieldset id="reason">
+        <label for="reason"> Why do you practice sports? </label>
+        <label for="job">
+          <input id="job" type="checkbox" class="inline" value="1" />
+          It is part of my job and I make my living doing it
+        </label>
+        <label for="enjoy">
+          <input id="enjoy" type="checkbox" class="inline" value="2" />
+          I enjoy it
+        </label>
+        <label for="loosse-weight">
+          <input id="loosse-weight" type="checkbox" class="inline" value="3" />
+          I want to loose weight
+        </label>
+        <label for="fitness">
+          <input id="fitness" type="checkbox" class="inline" value="4" />
+          I want to keep fit
+        </label>
+        <label for="other">
+          <input id="other" type="checkbox" class="inline" value="4" />
+          Other...
+        </label>
+      </fieldset>
+      <!-- TEXTAREA-->
+      <fieldset>
+        <label for="condition">
+          What is your current level of fittness?
+          <textarea
+            id="condition"
+            rows="5"
+            cols="30"
+            placeholder="I'm exercising..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <!-- SUBMIT-->
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
